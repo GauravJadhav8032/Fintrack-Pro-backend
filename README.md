@@ -88,8 +88,7 @@ DATABASE_URL="file:./dev.db"
 ```
 
 ## 7. API Documentation
-- Swagger UI: `http://localhost:3000/docs`
-- OpenAPI JSON: `http://localhost:3000/docs.json`
+- Swagger UI: `(https://fintrack-pro-backend-h1l8.onrender.com)`
 
 ## 8. API Endpoints Overview
 ### Auth
@@ -138,8 +137,8 @@ Error:
 ```
 
 ## 11. Deployment
-- Deployment platform: Render or Railway
-- Live API base URL: add your deployed URL here (for example: `https://your-service.onrender.com`)
+- Deployment platform: Render
+- Live API base URL: (https://fintrack-pro-backend-h1l8.onrender.com)
 
 ## 12. Future Enhancements
 - Advanced pagination
