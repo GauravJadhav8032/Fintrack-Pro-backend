@@ -1,5 +1,14 @@
 const swaggerJSDoc = require("swagger-jsdoc");
 
+function resolveServerUrl() {
+  const rawUrl =
+    process.env.PUBLIC_API_URL ||
+    process.env.RENDER_EXTERNAL_URL ||
+    `http://localhost:${process.env.PORT || 3000}`;
+
+  return String(rawUrl).replace(/\/$/, "");
+}
+
 const options = {
   definition: {
     openapi: "3.0.3",
@@ -10,7 +19,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:3000",
+        url: resolveServerUrl(),
       },
     ],
     components: {
