@@ -35,6 +35,10 @@ app.get("/health", (_req, res) => {
 	});
 });
 
+app.get("/", (_req, res) => {
+	res.redirect(302, "/docs");
+});
+
 app.get("/docs.json", (_req, res) => {
 	res.status(200).json(swaggerSpec);
 });
