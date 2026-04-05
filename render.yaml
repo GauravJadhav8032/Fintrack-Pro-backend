@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: fintrack-pro-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_EXPIRES_IN
+        value: 1h
+      - key: DATABASE_URL
+        value: file:/tmp/dev.db
+      - key: JWT_SECRET
+        sync: false
